@@ -3,9 +3,14 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
 html, body {
     padding: 0;
     margin: 0;
+}
+
+img {
+    width: 100%;
 }
 
 a {
@@ -20,12 +25,17 @@ h1 {
     margin: 0 0 16px 0;
 }
 
+p {
+    color: #979797;
+    margin: 0 0 16px 0;
+    font-size: 24px;
+}
+
 #header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 50px 128px;
-    position: sticky;
     top: 0;
     background-color: #2E1A11;
     z-index: 5;
@@ -43,12 +53,12 @@ section {
 #navigasi > nav {
     display: flex;
     align-items: center;
+    position: sticky;
     justify-content: space-between;
     column-gap: 16px;
     background-color:#9F613C;
-    position: sticky;
+    position: static;
     z-index: 5;
-
 }
 
 nav > a {;
@@ -60,4 +70,19 @@ nav > a {;
     padding: 12px 20px;
     box-sizing: border-box;
     border-radius: 10px;
+}
+
+#landing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 16px;
+}
+
+#landing > div {
+    width: 50%;
+}
+
+#landing p {
+    margin-bottom: 32px;
 }
