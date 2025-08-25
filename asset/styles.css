@@ -9,6 +9,14 @@ html, body {
     margin: 0;
 }
 
+body {
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('../image/tugu-adipura.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
 img {
     width: 100%;
 }
@@ -32,6 +40,8 @@ p {
 }
 
 #header {
+    height: 200px;
+    position: sticky;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,24 +56,39 @@ header > h1 {
     color: white;
 }
 
+header input[type="search"] {
+  width: 250px;
+  height: 35px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
 section {
     padding: 64px 128px;
 }
 
 #navigasi {
+    top: 200px;
     display: flex;
-    padding: 20px 128px;
+    padding: 0px 128px;
     align-items: center;
     position: sticky;
     justify-content: space-between;
     column-gap: 16px;
     background-color:#9F613C;
-    z-index: 5;
+    z-index: 1000;
     
 }
 
-nav > a {
+nav a {
     padding: 16px 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: black;
 }
 
 #header > form > input {
@@ -73,17 +98,17 @@ nav > a {
     border-radius: 10px;
 }
 
-#landing {
+#home {
     display: flex;
     align-items: center;
     justify-content: space-between;
     column-gap: 16px;
 }
 
-#landing > div {
+#home > div {
     width: 50%;
 }
 
-#landing p {
+#home p {
     margin-bottom: 32px;
 }
