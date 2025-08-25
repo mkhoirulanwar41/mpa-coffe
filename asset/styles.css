@@ -7,7 +7,6 @@
 html, body {
     padding: 0;
     margin: 0;
-    background-image: url('image/kopimpa2.jpg');
 }
 
 img {
@@ -36,7 +35,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 50px 128px;
+    padding: 0px 128px;
     top: 0;
     background-color: #2E1A11;
     z-index: 5;
@@ -51,33 +50,27 @@ section {
     padding: 64px 128px;
 }
 
-#navigasi > nav {
+#navigasi {
     display: flex;
+    padding: 20px 128px;
     align-items: center;
     position: sticky;
     justify-content: space-between;
     column-gap: 16px;
     background-color:#9F613C;
-    position: static;
     z-index: 5;
+    
 }
 
-nav > a {;
+nav > a {
     padding: 16px 10px;
 }
 
 #header > form > input {
     width: 100%;
-    padding: 12px 20px;
+    padding: 12px 10px;
     box-sizing: border-box;
     border-radius: 10px;
-    height: 120px;
-    
-}
-
-#header > div > img{
-    width: 70%;
-    padding: 0;
 }
 
 #landing {
