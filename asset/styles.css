@@ -125,7 +125,7 @@ nav a:hover {
 
 #menu-digital img {
     width: 400px;
-    height: 428px;
+    height: 380px;
     border: 5px solid #2E1A11;
     border-radius: 10px;
 }
@@ -165,4 +165,31 @@ nav a:hover {
 
 .price > p:hover{
     background-color: #b86a46;
+}
+
+.btn-price {
+    margin-top: 10px;
+    width: 400px;
+    height: 30px;
+    font-size: 20px;
+}
+
+@media screen and (max-width:900px) {
+    #menu-digital{
+        flex-direction: column;
+        display: block;
+    }
+    
+        .btn-price {
+        width: 400px;
+       
+    }
+
+        .price > p {
+        text-align: center;
+    }
+
+    #home img {
+        display: none;
+    }
 }
