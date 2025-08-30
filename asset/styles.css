@@ -85,6 +85,7 @@ section img {
     z-index: 1000;
     
 }
+
 nav  a {
     /* margin: 0 auto; */
     justify-items: center;
@@ -140,6 +141,17 @@ iframe, img {
 
 #menu-digital > div{
     padding-right: 16px;
+}
+
+#about-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 16px;
+}
+
+#about-us > img{
+    width: 50%;
 }
 
 .btn {
