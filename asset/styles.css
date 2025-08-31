@@ -19,6 +19,7 @@ body {
 
 img {
     width: 100%;
+    height: auto;
 }
 
 a {
@@ -40,15 +41,14 @@ p {
 }
 
 #header {
-    height: 200px;
-    position: sticky;
     display: flex;
+    position: sticky;
     align-items: center;
     justify-content: space-between;
     padding: 16px 128px;
     top: 0;
     background-color: #2E1A11;
-    z-index: 5;
+    z-index: 1000;
 }
 
 header > h1 {
@@ -73,29 +73,38 @@ section img {
     width: 100%;
 }
 
-#navigasi {
-    top: 200px;
+nav ul {
+    width: 100%;
+    left: 0;
+    right: 0;
+    list-style: none;
     display: flex;
-    padding: 0px 128px;
-    align-items: center;
-    position: sticky;
-    justify-content: space-between;
-    column-gap: 16px;
-    background-color:#9F613C;
-    z-index: 1000;
-    
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    z-index: 9999;
+}
+
+nav ul li {
+    margin: 0;
 }
 
 nav  a {
-    /* margin: 0 auto; */
-    justify-items: center;
-    padding: 0 50px 0 0;
-    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
 }
 
-/* nav a {
-    padding: 16px 10px;
-} */
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
 
 nav a:hover {
     color: black;
@@ -117,6 +126,10 @@ nav a:hover {
 
 #home > div {
     width: 50%;
+}
+
+#home > div > img {
+    justify-content: flex-end;
 }
 
 iframe, img {
@@ -206,6 +219,28 @@ iframe, img {
 
         .price > p {
         text-align: center;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #9F613C;
+        position: absolute;
+        top: 140px;
+        right: 0;
+        width: 50%;
+        padding: 16px;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menu-toggle:checked + .menu-icon + nav .menu{
+        display: flex;
+        max-height: 500px;
     }
 
     #home {
