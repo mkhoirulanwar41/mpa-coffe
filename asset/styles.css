@@ -56,10 +56,6 @@ p {
     z-index: 1000;
 }
 
-header > h1 {
-    margin: 0;
-    color: white;
-}
 
 header input[type="search"] {
   width: 200px;
@@ -147,10 +143,6 @@ nav a:hover {
     width: 50%;
 }
 
-#home > div > img {
-    justify-content: flex-end;
-}
-
 iframe, img {
     width: 100%;
 }
@@ -177,7 +169,6 @@ iframe, img {
     transition: tranfrom 0.3s ease;
 
 }
-
 
 .menu-card:hover {
     transform: translateY(-8px);
@@ -234,7 +225,6 @@ iframe, img {
     font-size: 16px;
     transition: background 0.3s ease;
 }
-
 
 
 #about-us {
@@ -321,6 +311,72 @@ iframe, img {
     color: red;
 }
 
+.promo-card .corner{
+    width: 80px;
+    height: 60px;
+    background-color: yellow;
+    border-radius: 0 0 40px 0;
+    text-align: center;
+}
+
+.promo-card:hover {
+    transform: translateY(-8px);
+}
+
+#testimoni {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+    position: relative;
+    
+}
+
+.testi-card {
+    flex: 1 1 300px;
+    max-width: 350px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: tranfrom 0.3s ease;
+    position: relative;
+}
+
+.testi-card p {
+    font-size: 16px;
+}
+
+.testi-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 70px;
+    top: -70px;
+}
+
+.testi-card .desc-card {
+    width: auto;
+    height: 400px;
+    background-color: #272727;
+    border-radius: 20px;
+}
+
+.testi-card h3 {
+    color: white;
+}
+
+.testi {
+    padding-top: 120px;
+}
+
+.testi-card:hover {
+    transform: translateY(-8px);
+}
+
 .btn {
     width: 200px;
     height: 50px;
@@ -367,7 +423,6 @@ iframe, img {
         align-items: center;
     }
     
-
     .menu-card {
         width: 100%;
         max-width: 400px;
@@ -411,15 +466,14 @@ iframe, img {
     }
 
     #menu-digital {
-        justify-items: center;
-        align-items: center;
-        text-align: center;
+       flex-direction: column;
+       align-items: center;
     }
 
-    #menu-digital > div {
+    .menu-card {
         width: 100%;
         max-width: 400px;
-        margin-bottom: 24px;
+        /* margin-bottom: 24px; */
     }
 
     #about-us {
@@ -438,6 +492,27 @@ iframe, img {
         width: 100%;
         max-width: 400px;
     }
+
+    #testimoni {
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .testi-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .testi-card img {
+         width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        object-fit: cover;
+        position: absolute;
+        left: 100px;
+        top: -70px;
+}
 
 }
 
