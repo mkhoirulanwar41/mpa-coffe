@@ -70,9 +70,6 @@ section {
     padding: 64px 128px;
 }
 
-section img {
-    width: 100%;
-}
 
 nav ul {
     width: 100%;
@@ -111,13 +108,6 @@ nav a:hover {
     color: black;
 }
 
-#header > form > input {
-    width: 100%;
-    padding: 12px 10px;
-    box-sizing: border-box;
-    border-radius: 10px;
-}
-
 .logo-container {
     display: flex;
     align-items: center;
@@ -136,20 +126,13 @@ nav a:hover {
     align-items: center;
     justify-content: space-between;
     column-gap: 16px;
-    text-align: center;
 }
 
-#home > div {
-    width: 50%;
+.home-card {
+  width: 50%;
 }
 
-#home img {
-    width: 100%;
-    object-fit: cover;
-    width: 500px;
-    height: 500px;
-    border-radius: 20px;
-}
+
 #home p {
     margin-bottom: 32px;
 }
@@ -467,7 +450,7 @@ nav a:hover {
         text-align: center;
     }
 
-    #home > div{
+    .home-card {
         width: 100%;
     }
     
