@@ -17,6 +17,11 @@ body {
     background-position: center; */
 }
 
+.title-section {
+    text-align: center;
+    padding: 0;
+}
+
 img {
     width: 100%;
     height: auto;
@@ -208,6 +213,10 @@ iframe, img {
     color: #2E1A11;
 }
 
+.menu-card p {
+    font-size: 16px;
+}
+
 .menu-card .price {
     font-size: 18px;
     color: #9F613C;
@@ -301,6 +310,15 @@ iframe, img {
 
 .promo-card p {
     font-size: 16px;
+}
+
+.promo-card .trough{
+    text-decoration: line-through;
+}
+
+.promo-card .diskon {
+    font-size: 20px;
+    color: red;
 }
 
 .btn {
