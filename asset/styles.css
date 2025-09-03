@@ -117,11 +117,25 @@ nav a:hover {
     border-radius: 10px;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
 #home {
     display: flex;
     align-items: center;
     justify-content: space-between;
     column-gap: 16px;
+    text-align: center;
 }
 
 #home > div {
@@ -158,6 +172,7 @@ iframe, img {
     transition: tranfrom 0.3s ease;
 
 }
+
 
 .menu-card:hover {
     transform: translateY(-8px);
@@ -260,6 +275,13 @@ iframe, img {
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
+#promo-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+}
+
 .btn {
     width: 200px;
     height: 50px;
@@ -300,7 +322,7 @@ iframe, img {
     font-size: 20px;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:800px) {
     #menu-digital{
         flex-direction: column;
         align-items: center;
@@ -318,7 +340,7 @@ iframe, img {
         background-color: #9F613C;
         position: absolute;
         top: 140px;
-        right: 0;
+        left: 0;
         width: 100%;
         padding: 16px;
         border-radius: 8px;
