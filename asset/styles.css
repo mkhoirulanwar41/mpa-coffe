@@ -81,6 +81,7 @@ nav ul {
     margin: 0;
     padding: 0;
     z-index: 9999;
+    
 }
 
 nav ul li {
@@ -347,7 +348,8 @@ nav a:hover {
 
 .testi-card .desc-card {
     width: auto;
-    height: 400px;
+    padding: 120px 20px 20px;
+    min-width: 250px;
     background-color: #2E1A11;
     border-radius: 20px;
 }
@@ -357,7 +359,7 @@ nav a:hover {
 }
 
 .testi {
-    padding-top: 120px;
+    padding-top: 10px;
 }
 
 .testi-card:hover {
@@ -558,6 +560,7 @@ iframe {
         padding: 16px;
         border-radius: 8px;
         text-align: center;
+        transition: max-height 0.3s ease-in-out;
     }
 
     .menu-icon {
@@ -624,13 +627,15 @@ iframe {
     }
 
     .testi-card img {
-         width: 200px;
+        width: 200px;
         height: 200px;
         border-radius: 100%;
         object-fit: cover;
-        position: absolute;
-        left: 100px;
+        position: relative;
+        left: auto;
         top: -70px;
+        display: block;
+        margin: 0 auto;
 }
 
 .contact-card {
