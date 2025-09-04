@@ -370,22 +370,91 @@ nav a:hover {
     font-size: 18px;
 }
 
-.btn {
-    width: 200px;
-    height: 50px;
-    border: 3px solid black;
-    border-radius: 10px;
+#contact h3 {
+    position: relative;
+}
+
+.contact-card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+    column-gap: 128px;
+}
+
+.contact-card > div, .contact-card > form {
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #2E1A11;
+    padding: 64px 32px;
+}
+
+form h3 {
+    font-size: 32px;
+    text-align: center;
+}
+
+form  button {
+    border: none;
+}
+
+form button:hover {
+    cursor: pointer;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 32px;
+    margin-top: 32px;
+    grid-template-areas: "name subject"
+                          "email phone"
+                          "message message";
+}
+
+#input-name {
+    grid-area: name;
+}
+
+#input-subject {
+    grid-area: subject;
+}
+
+#input-email {
+    grid-area: email;
+}
+
+#input-phone {
+    grid-area: phone;
+}
+
+#input-message {
+    grid-area: message;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.input-group label {
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
     font-size: 20px;
 }
 
-#btn-pesan:hover{
-    background-color: rgb(0, 26, 172);
-}
-
-#btn-pesan{
-    background-color: rgb(57, 47, 139);
-    margin: 0 0 16px;
-    color: white;
+.input-group input:focus {
+    border-bottom: 2px solid #9F613C;
 }
 
 .price {
