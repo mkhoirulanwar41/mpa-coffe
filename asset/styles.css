@@ -474,11 +474,6 @@ iframe {
     width: 100%;
 }
 
-.price {
-    width: 400px;
-    height: 20px;
-}
-
 .price > p {
     text-align: center;
     color: white;
@@ -679,6 +674,7 @@ footer p {
 }
 
 }
+
 
 
 
