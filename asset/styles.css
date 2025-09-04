@@ -454,7 +454,22 @@ form button:hover {
 }
 
 .input-group input:focus {
-    border-bottom: 2px solid #9F613C;
+    border-bottom: 2px solid #FFC108;
+}
+
+.contact-card > div > h3 {
+    font-size: 32px;
+    text-align: center;
+}
+
+.btn-contact {
+    background-color: #2E1A11;
+    color: white;
+    padding: 8px 24px;
+}
+
+iframe {
+    width: 100%;
 }
 
 .price {
@@ -574,6 +589,22 @@ form button:hover {
         position: absolute;
         left: 100px;
         top: -70px;
+}
+
+.contact-card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 64px;
+}
+
+.contact-card form, .contact-card > div {
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
 }
 
 }
