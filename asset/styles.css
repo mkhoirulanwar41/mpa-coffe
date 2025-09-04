@@ -462,7 +462,7 @@ form button:hover {
     text-align: center;
 }
 
-.btn-contact {
+.btn{
     background-color: #2E1A11;
     color: white;
     padding: 8px 24px;
@@ -492,6 +492,48 @@ iframe {
     width: 400px;
     height: 30px;
     font-size: 20px;
+}
+
+#blog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 50px 10%;
+    background: #FFF8F2;
+}
+
+.blog-card {
+    background: #FFF;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.blog-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.blog-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.blog-card p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.blog-card a {
+    color: #c47b38;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-card:hover {
+    transform: translateY(-8px);
 }
 
 @media screen and (max-width:800px) {
