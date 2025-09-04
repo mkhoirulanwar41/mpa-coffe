@@ -674,9 +674,10 @@ footer p {
     flex-direction: column;
 }
 
-#footer {
+#header, #footer {
     padding: 16px 32px;
 }
 
 }
+
 
