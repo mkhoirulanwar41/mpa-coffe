@@ -468,6 +468,7 @@ form button:hover {
     background-color: #2E1A11;
     color: white;
     padding: 8px 24px;
+    border-radius: 5px;
 }
 
 iframe {
@@ -674,6 +675,7 @@ footer p {
 }
 
 }
+
 
 
 
